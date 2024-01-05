@@ -49,3 +49,67 @@ form input.equal{
 form input.operator{
     color: #33ffd8;
 }
+
+@media(max-width : 400px){
+    .calculator{
+        padding: 20px;
+    }
+    .calculator form input{
+      
+        width: 38px;
+        height: 38px;
+       
+        font-size: 18px;
+        color: #fff;
+        margin: 4px;
+        
+    }
+    form .display{
+        display: flex;
+        justify-content: flex-end;
+        margin: 15px 0;
+    }
+    form .display input{
+        flex: 1;
+        text-align: right;
+        font-size: 40px;
+        box-shadow: none;
+    }
+    form input.equal{
+        width: 200px;
+    }
+}
+
+
+@media(max-width : 250px){
+    .calculator{
+        padding: 10px;
+    }
+    .calculator form input{
+      
+        width: 25px;
+        height: 25px;
+       
+        font-size: 16px;
+        color: #fff;
+        margin: 3px;
+        
+    }
+    form .display{
+        display: flex;
+        justify-content: flex-end;
+        margin: 13px 0;
+    }
+    form .display input{
+        flex: 1;
+        text-align: right;
+        font-size: 37px;
+        box-shadow: none;
+    }
+    form input.equal{
+        width: 100px;
+    }
+    form input.operator{
+        color: #33ffd8;
+    }
+}
