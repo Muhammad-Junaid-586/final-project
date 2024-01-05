@@ -79,7 +79,7 @@ form input.operator{
         box-shadow: none;
     }
     form input.equal{
-        width: 125px;
+        width: 110px;
     }
 }
 
@@ -110,7 +110,7 @@ form input.operator{
         box-shadow: none;
     }
     form input.equal{
-        width: 70px;
+        width: 80px;
     }
     form input.operator{
         color: #33ffd8;
