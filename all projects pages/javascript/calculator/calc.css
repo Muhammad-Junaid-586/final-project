@@ -49,10 +49,10 @@ form input.equal{
 form input.operator{
     color: #33ffd8;
 }
-.calculator div.equaldiv{
+/* .calculator div.equaldiv{
     display: grid;
     grid-template-columns: 1fr 2fr;
-}
+} */
 @media(max-width : 400px){
     .calculator{
         padding: 20px;
@@ -78,9 +78,9 @@ form input.operator{
         font-size: 40px;
         box-shadow: none;
     }
-    /* form input.equal{
+    form input.equal{
         width: 169px;
-    } */
+    }
 }
 
 
@@ -109,9 +109,9 @@ form input.operator{
         font-size: 37px;
         box-shadow: none;
     }
-    /* form input.equal{
+    form input.equal{
         width: 100px;
-    } */
+    }
     form input.operator{
         color: #33ffd8;
     }
