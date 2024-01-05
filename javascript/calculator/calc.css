@@ -110,4 +110,7 @@ form input.operator{
     form input.equal{
         width: 185px;
     }
+    form input.operator{
+        color: #33ffd8;
+    }
 }
