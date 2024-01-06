@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calcultor">
+        <input type="text" id="txtbox" placeholder="0">
+
+        
+
+        <div class="row">
+          <div class="btn operator" onclick="clear1()" ><h3>C</h3></div>
+          <div class="btn" onclick=" addvalue('9')"><h3>9</h3></div>
+          <div class="btn" onclick=" addvalue('8')"><h3>8</h3></div>
+          <div class="btn" onclick=" addvalue('7')"><h3>7</h3></div>
+
+          <div class="btn operator" onclick=" addvalue('/')" class="operator"><h3>/</h3></div>
+          <div class="btn" onclick=" addvalue('6')"><h3>6</h3></div>
+          <div class="btn" onclick=" addvalue('5')"><h3>5</h3></div>
+          <div class="btn" onclick=" addvalue('4')"><h3>4</h3></div>
+
+
+          <div class="btn operator"  onclick=" addvalue('*')" class="operator "><h3>*</h3></div>
+          <div class="btn"  onclick=" addvalue('3')"><h3>3</h3></div>
+          <div class="btn"  onclick=" addvalue('2')"> <h3>2</h3></div>
+          <div class="btn"  onclick=" addvalue('1')"> <h3>1</h3> </div>
+
+
+          <div class="btn operator" onclick=" addvalue('-')" class="operator"> <h3>-</h3></div>
+          <div class="btn" onclick=" addvalue('0')"> <h3>0</h3></div>
+          <div class="btn" onclick=" addvalue('.')"> <h3>.</h3></div>
+          <div class="btn equal btn11" onclick="calculate()"><h3>=</h3></div>
+
+
+          <div class="btn operator" onclick=" addvalue('+')" class="operator"><h3>+</h3></div>
+          <div class="btn" onclick="removeterm()"><h3>R.term</h3></div>
+          <div class="btn " onclick="remove()"><h3>Del</h3> </div>
+
+          </div> 
+
+          
+          
+        </div>
+        
+       
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
