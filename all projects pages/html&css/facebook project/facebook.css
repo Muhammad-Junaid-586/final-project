@@ -545,10 +545,29 @@ nav{
         display: none;
     }
     .main-content{
-        width: 350px;
+        width: 360px;
     }
     .story{
         flex-basis: 15%;
+    }
+
+    /* .story-gallery{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    } */
+   
+    
+    .story img{
+       
+        width: 30px;
+        border-radius: 50%;
+       
+    }
+    .story p{
+      
+        font-size: 8px;
+        
     }
     
     .left-sidebar{
