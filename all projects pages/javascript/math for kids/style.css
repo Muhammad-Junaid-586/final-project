@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Luckiest Guy';
+    /* font-family: 'Rockwell Extra Bold'; */
+    background-color: #e6e6ea;
+}
+
+.container{
+    padding:20px;
+    overflow: hidden;
+    background: #fe4a49;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container h1{
+    /* float: left;
+    margin-left: 10%; */
+    color: white;
+}
+
+.container ul{
+    /* margin-left: 60%; */
+    list-style-type: none;
+    font-size: 20px;
+}
+.container li{
+    float: left;
+    padding: 0 20px;
+    margin-top: 10px;
+}
+.container a{
+    text-decoration: none;
+    color: white;
+}
+
+.current a::after{
+    content: '_';
+    font-size: 4px;
+    display: block;
+    background-color: white;
+
+}
+.wrapper{
+    display: grid;
+    /* grid-template-columns: 82% 18%; */
+    grid-template-columns: 1fr;
+}
+
+.equation{
+    font-size: 72px;
+    background-color: white;
+    /* border-radius: 3px;
+    padding-top: 15%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.equation h1{
+    /* display: inline; */
+    padding: 20px;
+}
+
+.answer-option h1{
+    font-size: 78px;
+    margin-right: 10px;
+    margin-top: 10px;
+    text-align: center;
+    color: whitesmoke;
+    border-radius: 3px;
+    width: 100%;
+    cursor: pointer;
+}
+
+#option1{
+    background-color: #fe4a49;
+    transition: 1s;
+}
+#option1:hover{
+    color: #fe4a49;
+    background-color: white;
+}
+#option2{
+    background-color: #2ab7ea;
+    transition: 1s;
+}
+#option2:hover{
+    color: #2ab7ea;
+    background-color: white;
+}
+#option3{
+    background-color: #fed766;
+    transition: 1s;
+}
+#option3:hover{
+    color: #fed766;
+    background-color: white;
+}
+
+@media(max-width : 768px){
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        /* padding: 15px 10px; */
+    }
+    
+    
+    .equation{
+        font-size: 40px;
+        padding-top: 10%;
+    }
+}
+@media(max-width : 480px){
+   
+    .container li{
+        padding: 0 10px;
+    }
+    
+    .equation{
+        font-size: 40px;
+        padding-top: 10%;
+    }
+    .equation h1{
+        padding: 10px;
+    }
+}
