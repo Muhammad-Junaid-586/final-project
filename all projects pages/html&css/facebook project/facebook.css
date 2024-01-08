@@ -537,14 +537,22 @@ nav{
     .left-sidebar{
         flex-basis: 29%;
     }
+    
 }
 
 @media(max-width : 580px){
     nav .search-box{
         display: none;
     }
+    .main-content{
+        width: 350px;
+    }
+    .story{
+        flex-basis: 15%;
+    }
     
     .left-sidebar{
         display: none;
     }
+    
 }

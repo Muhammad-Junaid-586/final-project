@@ -1,0 +1,91 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap');
+  
+  @import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Vesper+Libre:wght@400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+     /* Set a valid background color */
+    /* font-family: 'Architects Daughter'; */
+    /* font-family: 'Architects Daughter', cursive; */
+
+    /* font-family: 'Architects Daughter'; */
+    /* font-family: 'Carter One', system-ui;
+font-family: 'Vesper Libre', serif;  */
+
+    
+    font-size: 50px;
+    /* padding: 200px; */
+}
+.main-container{
+    width: 95%;
+    margin: auto;
+}
+.container1{
+    margin-left: 5%;
+}
+.container2{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 5%;
+}
+.container3{
+    display: none; 
+    position: absolute;
+    top: 26%;
+    left: 40%;
+
+}
+
+textarea{
+    box-shadow: 10px 10px 24px 0 rgba(0, 0, 0, 0.75);
+    border: none;
+    outline: none;
+    width: 275px;
+    height: 275px;
+    padding: 40px 25px 25px 25px;
+}
+svg{
+    color: gray;
+}
+#check-icon{
+    position: absolute;
+    top: 4%;
+    right: 17%;
+}
+#x-icon{
+    position: absolute;
+    top: 4%;
+    right: 5%;
+    
+}
+
+
+@media(max-width : 768px){
+    .container2{
+        justify-content: center;
+    }
+    .container3{
+        left: 30%;
+    }
+}
+@media(max-width : 480px){
+    .container2{
+        justify-content: center;
+    }
+    .container3{
+        left: 25%;
+    }
+    textarea{
+        
+        width: 250px;
+        height: 250px;
+        padding: 30px 20px 20px 20px;
+    }
+}
