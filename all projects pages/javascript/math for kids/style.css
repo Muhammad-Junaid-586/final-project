@@ -132,6 +132,8 @@ body{
         padding: 10px;
     }
     .answer-option h1{
-        padding: 15px 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
