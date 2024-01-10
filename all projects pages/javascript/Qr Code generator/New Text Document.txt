@@ -1,0 +1,22 @@
+QR code API
+You can generate and decode / read QR code graphics with our QR code generator web API at api.qrserver.com.
+
+Important features
+Create QR codes via Internet (develop your own QR code generator)
+Read / scan QR codes via Internet (develop your own QR code reader)
+Social QR code with logo (Facebook or Twitter logo / image embedded in the QR code) (coming soon)
+Create colored QR codes
+Professional QR code print file formats (vector graphics, QR code EPS and SVG)
+High performance server
+Encrypted communication via HTTPS (SSL/TLS)
+Just try it, create an image
+Call the URL https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Example to get a QR code with the content "Example":
+
+
+Now replace "Example" in the URL to get a new QR code with a text choosen by you. You can find a detailed function description and examples at our API documentation.
+
+Colored QR codes
+You can create colored QR codes with our API. Just choose a background and / or a foreground color and take care of good contrast between the light and dark modules / pixels. Furthermore, a colorized QR code should be no negative (in terms of color, the actually black pixels / modules have to be darker than the normally white pixels) as the dark modules / pixels contain the data and a negative will confuse many QR code readers:
+
+
+You can find a detailed function description and examples at our API
