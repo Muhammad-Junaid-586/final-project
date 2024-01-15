@@ -1,0 +1,66 @@
+It looks like there are a few issues in your code. Let's address them:
+
+Typos in JavaScript:
+
+innerHtml should be innerHTML.
+The variable names you're using in JavaScript (cloud_pct, feels_like, etc.) don't match the IDs in your HTML (cloud_pct, feels_like, etc.). Make sure they match.
+Fetching Weather Data:
+
+You are using fetch for the weather data, but you're also using axios in your script tags. You should use one of them consistently. In your case, since you imported Axios, you can use Axios throughout.
+Handling API Response:
+
+You're using await response.json() to get the result, but then you're trying to access properties like result.cloud_pct, which may not exist. You should first check the structure of the API response and then access the properties accordingly.
+Here's an updated version of your code:
+
+html
+Copy code
+<!-- Add the script for Axios -->
+<script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
+<!-- Your HTML remains unchanged -->
+
+<script>
+    let cityName = document.querySelector('#cityName');
+    let submit = document.querySelector('#submit');
+    let inp = document.querySelector('#city');
+
+    const apiKey = 'bd168b4ac3msh416f19ee0e8af3cp16ffc2jsn21cc248159fb';
+    const baseUrl = 'https://weather-by-api-ninjas.p.rapidapi.com/v1/weather';
+
+    const getWeather = async (city) => {
+        try {
+            const response = await axios.get(baseUrl, {
+                params: { city: city },
+                headers: {
+                    'X-RapidAPI-Key': apiKey,
+                    'X-RapidAPI-Host': 'weather-by-api-ninjas.p.rapidapi.com'
+                }
+            });
+
+            const result = response.data;
+
+            cityName.innerHTML = city;
+            // Update these lines according to the actual structure of the API response
+            document.getElementById('cloud_pct').innerHTML = result.cloud_pct;
+            document.getElementById('feels_like').innerHTML = result.feels_like;
+            document.getElementById('humidity').innerHTML = result.humidity;
+            document.getElementById('max_temp').innerHTML = result.max_temp;
+            document.getElementById('min_temp').innerHTML = result.min_temp;
+            document.getElementById('sunrise').innerHTML = result.sunrise;
+            document.getElementById('sunset').innerHTML = result.sunset;
+            document.getElementById('temp').innerHTML = result.temp;
+            document.getElementById('wind_degrees').innerHTML = result.wind_degrees;
+            document.getElementById('wind_speed').innerHTML = result.wind_speed;
+
+            console.log(result);
+        } catch (error) {
+            console.error(error);
+        }
+    }
+
+    submit.addEventListener('click', (e) => {
+        e.preventDefault();
+        getWeather(inp.value);
+    });
+</script>
+This assumes that the structure of the API response matches the properties you're trying to access. If not, you'll need to adjust the code accordingly.
