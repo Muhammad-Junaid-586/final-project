@@ -586,6 +586,14 @@ h1.heading{
     stroke-dashoffset: 472;
     animation: forwordprss 2s linear forwards;
 }
+#bootstrap{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: forbootstrap 2s linear forwards;
+}
 svg{
     position: absolute;
     top: 0;
@@ -613,6 +621,11 @@ svg{
    @keyframes forwordprss {
         100%{
             stroke-dashoffset: 100;
+        }
+   }
+   @keyframes forbootstrap{
+        100%{
+            stroke-dashoffset: 85;
         }
    }
 
