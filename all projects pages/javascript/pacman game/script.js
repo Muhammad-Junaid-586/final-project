@@ -5,6 +5,17 @@ let score = 0;
 let squares = [];
 
 
+const upBtn = document.getElementById('up-btn');
+const downBtn = document.getElementById('down-btn');
+const leftBtn = document.getElementById('left-btn');
+const rightBtn = document.getElementById('right-btn');
+
+
+upBtn.addEventListener('click', (e) => contol(e));
+downBtn.addEventListener('click', (e) => contol(e));
+leftBtn.addEventListener('click', (e) => contol(e));
+rightBtn.addEventListener('click', (e) => contol(e));
+
 
 
 const layout = [
@@ -125,6 +136,52 @@ function contol(e) {
             break;
 
     }
+
+    switch (e.target) {
+        case upBtn:
+            // Handle up movement
+            if (
+                !squares[packmanCurrentIndex - width].classList.contains('ghost-lair') &&
+                !squares[packmanCurrentIndex - width].classList.contains('wall') &&
+                packmanCurrentIndex - width >= 0) {
+                packmanCurrentIndex -= width;
+            }
+            console.log('Up');
+            break;
+        case downBtn:
+            // Handle down movement
+            if (!squares[packmanCurrentIndex + width].classList.contains('ghost-lair') &&
+            !squares[packmanCurrentIndex + width].classList.contains('wall') &&
+            packmanCurrentIndex + width < width * width) {
+            packmanCurrentIndex += width;
+        }
+        console.log('down');
+            break;
+        case leftBtn:
+            // Handle left movement
+            if (!squares[packmanCurrentIndex - 1].classList.contains('ghost-lair') &&
+                !squares[packmanCurrentIndex - 1].classList.contains('wall') &&
+                packmanCurrentIndex % width !== 0) {
+                packmanCurrentIndex -= 1;
+            }
+            if (packmanCurrentIndex === 364) {
+                packmanCurrentIndex = 391
+            }
+            console.log('left');
+            break;
+        case rightBtn:
+            // Handle right movement
+            if (!squares[packmanCurrentIndex + 1].classList.contains('ghost-lair') &&
+            !squares[packmanCurrentIndex + 1].classList.contains('wall') &&
+            packmanCurrentIndex % width < width - 1) {
+            packmanCurrentIndex += 1;
+        }
+        if (packmanCurrentIndex === 391) {
+            packmanCurrentIndex = 364
+        }
+        console.log('right');
+            break;
+    }
     squares[packmanCurrentIndex].classList.add('pacman');
     pacDotEaten();
     powerPelletEaten()
@@ -242,7 +299,7 @@ function checkForGameOver() {
 }
 
 function checkForWin() {
-    if (score === 274) {
+    if (score >= 274) {
         ghosts.forEach((ghost)=>{
             clearInterval(ghost.timeId);
         })
