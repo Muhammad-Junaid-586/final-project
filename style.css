@@ -638,3 +638,11 @@ svg{
     }
 
 }
+
+/* Source code btn */
+.custum-btn{
+    position: fixed;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+   }
