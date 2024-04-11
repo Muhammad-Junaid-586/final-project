@@ -646,3 +646,24 @@ svg{
     right: 50px;
     transform: translateY(-50%);
    }
+
+   .btnc{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: #0ef;
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem #0ef;
+    font-size: 1rem;
+    color: black;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+.btnc:hover{
+    box-shadow: none;
+}
+.btnc .close{
+    position: absolute;
+    top: 10px;
+    left: 85%;
+}

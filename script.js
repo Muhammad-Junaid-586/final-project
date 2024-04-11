@@ -60,3 +60,13 @@ const typed = new Typed('.multiple-text',{
     backDelay : 1000,
     loop : true
 })
+
+
+
+
+// ============= Source Code =============== //
+document.querySelector('.close').addEventListener('click', function (e) {
+    e.preventDefault();
+    e.target.parentNode.style.display = 'none';
+    
+});
