@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1.2rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.section1{
+    background-color: #8C3232;
+    margin-left: 10px;
+    position: relative;
+}
+.section1 .container1{
+    padding-inline: 40px;
+}
+
+#sec-left{
+    padding-top: 140px;
+}
+
+.section1 h1{
+    font-size: 7rem;
+    font-weight: 900;
+}
+
+.section1 p{
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.section1 h2{
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+
+ .sec-left .first{
+    padding: 0;
+    height: 14px;
+    width: 14px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    color: black !important;
+}
+.sec-left .second{
+    top: 450px;
+    right: 70px;
+}
+
+.sec-right{
+    color: white;
+    padding-block: 40px;
+    position: relative;
+}
+
+::placeholder{
+    color: white;
+}
+
+.form-control{
+    background-color: transparent;
+    padding: 10px;
+    border:  1px solid white;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.form-control:focus{
+    background-color: transparent;
+    outline: none !important;
+    border: 1px solid white !important;
+    box-shadow: none;
+    color: white;
+
+}
+
+.form-control::placeholder{
+    color: white;
+}
+
+.form-control:focus{
+    color: white;
+}
+
+.sec-right p{
+    font-size: 12px;
+}
+.sec-right h3{
+    color: rgb(63, 61, 61);
+    font-weight: 900;
+}
+.checkbox-btn div:first-child{
+    display: flex;
+    align-items: center;
+}
+.checkbox-btn div button{
+    padding: 0;
+    height: 14px;
+    width: 14px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    color: black !important;
+}
+
+
+
+[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+}
+[type = "checkbox"]{
+    position: absolute;
+    opacity: 0;
+}
+
+[type="checkbox"] + label {
+    position: relative;
+    padding-left: 30px;
+    display: inline-block;
+    cursor: pointer;
+    line-height: 20px;
+}
+
+[type="checkbox"] + label::before {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 0;
+    width: 14px;
+    height: 14px;
+    border: 1px solid white; /* Border for the custom checkbox */
+    box-sizing: border-box;
+    border-radius: 4px; /* Optional: Add border-radius for rounded corners */
+    background-color: transparent; /* Background color for the custom checkbox */
+}
+
+[type="checkbox"]:checked + label::before {
+    border-color: white; /* Border color when checkbox is checked */
+    background-color: transparent; /* Background color when checkbox is checked */
+}
+
+[type="checkbox"]:checked + label::after {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M0 0h24v24H0z' fill='none'%3E%3C/path%3E%3Cpath d='M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z'/%3E%3C/svg%3E");
+    position: absolute;
+    left: 8px;
+    top: 0;
+    width: 14px;
+    height: 12px;
+    background-size: contain;
+}
+
+[type="checkbox"]:focus + label::before {
+    /* Optional: Add focus styling */
+    border-color: white;
+}
+.right{
+    position: relative;
+}
+
+
+/* last button on right side */
+
+.last-btn{
+    /* width: 90%; */
+    padding:7px 30px;
+    font-size: 23px;
+    color: rgb(63, 61, 61);
+    /* color: black; */
+    font-weight: 300;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    background-color: white;
+    border: none;
+    margin-bottom: 60px;
+}
+.sec-right button i{
+    padding-right: 5px;
+}
+
+
+
+
+
+.cut-bg{
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgb(255, 255, 255);
+    background:
+    linear-gradient(135deg, transparent 75%, #ffffff 0)  bottom left;
+  }
+
+
+  @media (max-width : 992px){
+    .section1 .container1{
+        padding-inline: 0px !important;
+        margin-inline: 20px !important;
+    }
+
+    .section1 h1{
+        font-size: 5rem;
+        font-weight: 900;
+    }
+
+    .section1 h2{
+        font-weight: 700;
+        font-size: 1.8rem;
+    }
+    .section1 .container1{
+    padding-inline: 20px;
+}
+
+ .sec-right form{
+        padding-left: 22px;
+    }
+  }
+
+  
+  @media (max-width : 768px){
+    .section1{
+        margin-left: 5px;
+    }
+    
+    #sec-left{
+        padding-top: 150px;
+    }
+    
+    .section1 h1{
+        font-size: 3.8rem;
+        font-weight: 900;
+    }
+    
+    .section1 .sec-left p{
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+    
+    .section1 h2{
+        font-size: 1.9rem;
+        font-weight: 700;
+    }
+   
+  
+    
+
+
+    .cut-bg{
+       
+        width: 100px;
+        height: 150px;
+        
+       
+      }
+
+      .last-btn{
+       
+        padding:5px 20px;
+        font-size: 18px;
+        
+        
+        font-weight: 300;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+       
+        margin-bottom: 60px;
+    }
+
+    .sec-right form{
+        padding-left: 22px;
+    }
+    .sec-right button i{
+        padding-right: 5px;
+    }
+
+    .section1 .container1{
+    padding-inline: 10px;
+}
+
+    textarea:placeholder{
+        font-size: 11px;
+    }
+  }
+
+  @media (max-width : 576px){
+
+     #sec-left{
+        padding-top: 80px;
+    }
+    .sec-right form{
+        padding-left: 0px;
+    }
+
+     .section1 h1{
+        font-size: 5.7rem;
+        font-weight: 900;
+    }
+
+
+    .section1 .sec-left p{
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+    
+  }
+

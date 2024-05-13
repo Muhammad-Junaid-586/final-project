@@ -310,3 +310,12 @@ function checkForWin() {
     }
 }
 // clearInterval(ghost.timeId);
+
+
+<!-- javascript code  -->
+// ============= Source Code =============== //
+document.querySelector('.close').addEventListener('click', function (e) {
+e.preventDefault();
+e.target.parentNode.style.display = 'none';
+
+});

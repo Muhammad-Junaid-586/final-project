@@ -87,17 +87,19 @@ button{
 }
 
 /* source code btn */
+
+
+
 .custum-btn{
     position: fixed;
-    top: 2%;
-    left: 32%;
-    /* transform: translateX(-5%); */
-    text-decoration: none;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
    }
 
-   .btn{
+   .btnc{
     display: inline-block;
-    padding: 1rem 2rem;
+    padding: 1rem 2.8rem;
     background: #0ef;
     border-radius: 4rem;
     box-shadow: 0 0 1rem #0ef;
@@ -106,12 +108,15 @@ button{
     letter-spacing: .1rem;
     font-weight: 600;
     transition: .5s ease;
-    text-decoration: none;
 }
-.btn:hover{
+.btnc:hover{
     box-shadow: none;
 }
-
+.btnc .close{
+    position: absolute;
+    top: 10px;
+    left: 85%;
+}
 @media (max-width : 550px){
     
 

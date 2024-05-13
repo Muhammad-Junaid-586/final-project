@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "poppoins", sans-serif;
+    background-color: #d7d7d7;
+}
+
+
+.section1 .first img{
+    width: 370px;
+}
+
+.section1 h3{
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 0;
+    margin: 0;
+}
+
+.section1 p,.section2 p{
+    font-size: 26px;
+    margin-bottom: 14px;
+    color: gray;
+    letter-spacing: 2px;
+    padding-top: 7px;
+}
+
+.section2 h4{
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.section2 .text-container{
+    padding-right: 40px;
+}
+
+.section2 p{
+    font-size: 28px;
+}
+
+.section3 .text-container{
+    padding-right: 0;
+    padding-left: 40px;
+}
+/* .section4{
+    position: relative;
+} */
+
+/* .section4 .vector{
+    position: absolute;
+    top: 105px;
+    right: 80px;
+    width: 600px;
+} */
+
+.section4 .vector{
+    margin-top: -160px;
+    margin-left: -170px;
+}
+
+.section4 h4{
+    padding-top: 20px;
+}
+
+.section5 h5{
+    font-size: 25px;
+}
+.section5 p{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.section5 p span{
+    color: blue;
+}
+
+
+
+
+
+@media(max-width : 992px){
+    .main-img{
+        width: 900px;
+        height: 400px;
+    }
+    .section1 .first img{
+        width: 280px;
+    }
+    
+    .section1 h3{
+        font-weight: 600;
+        letter-spacing: 1px;
+       font-size: 22px;
+    }
+    
+    .section1 p,.section2 p{
+        font-size: 20px;
+       
+    }
+    .section1 p{
+        padding-top: 0px;
+    }
+
+    .section4 .vector{
+        margin-top: -70px;
+        margin-left: -170px;
+    }
+
+
+}
+
+@media(max-width : 768px){
+    .section1 .first img{
+        width: 380px;
+    }
+    
+    .section1 h3{
+        font-weight: 700;
+        letter-spacing: 2px;
+       font-size: 30px;
+    }
+    
+    .section1 p,.section2 p{
+        font-size: 22px;
+       
+    }
+
+    .section4 .vector{
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+}
+
+@media(max-width : 576px){
+    .section1 .first img{
+        width: 320px;
+    }
+    
+    .section1 h3{
+        font-weight: 900;
+        letter-spacing: 2px;
+        font-size: 19px;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .section1 p,
+    .section2 p{
+        font-size: 18px;
+    }
+
+    .section1 .row:first-child{
+        flex-direction: column-reverse;
+    }
+    
+    
+}
