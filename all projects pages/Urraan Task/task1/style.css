@@ -49,16 +49,7 @@ body{
     padding-right: 0;
     padding-left: 40px;
 }
-/* .section4{
-    position: relative;
-} */
 
-/* .section4 .vector{
-    position: absolute;
-    top: 105px;
-    right: 80px;
-    width: 600px;
-} */
 
 .section4 .vector{
     margin-top: -160px;
@@ -113,6 +104,17 @@ body{
         margin-left: -170px;
     }
 
+    .section2 .text-container{
+        padding-right: 10px;
+    }
+    
+    
+    
+    .section3 .text-container{
+        padding-right: 0;
+        padding-left: 10px;
+    }
+
 
 }
 
@@ -158,6 +160,17 @@ body{
 
     .section1 .row:first-child{
         flex-direction: column-reverse;
+    }
+
+    .section2 .text-container{
+        padding-right: 0px;
+    }
+    
+    
+    
+    .section3 .text-container{
+        padding-right: 0;
+        padding-left: 0px;
     }
     
     
