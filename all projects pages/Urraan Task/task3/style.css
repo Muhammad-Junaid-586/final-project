@@ -134,9 +134,7 @@ h1{
         text-align: center;
     }
 
-    /* .section2 .icon-img{
-        padding-left: 80px !important;
-    } */
+   
 
     .cut-bg{
         width: 150px;
@@ -146,6 +144,9 @@ h1{
 
       .section2 .icon-img{
         text-align: center !important;
+        padding-left: -20px;
+        margin-left: -20px;
+        /* justify-content: center !important; */
     }
 
    
