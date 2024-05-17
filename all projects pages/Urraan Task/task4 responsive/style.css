@@ -943,8 +943,6 @@ article .inputdiv input {
        margin-top: -80px;
     }
     .sec3-btn button {
-        /* padding: 5px 10px; */
-       
         font-weight: 700;
         display: flex;
         align-items: center;
@@ -1166,19 +1164,29 @@ article .inputdiv input {
         font-size: 16px;
     }
     .line-separator {
-        width: 60%;
+        width: 90%;
+        margin-inline: auto;
     }
 
     /* ===== sec2 ===== */
+
+    .sec2-right-two .sec2-r-form {
+        width: 100%;
+        
+        margin: 5px 10px;
+    }
+
+   
+
     .sec2-right .para2{
-        font-size: 20px;
-        padding-inline: 20px;
+        font-size: 18px;
+        padding-inline: 16px;
     }
 
     .sec2-r-img {
         width: 100%;
         margin: 5px auto ;
-        transform: rotate(0deg);
+        transform: rotate(5deg);
         
     }
 
@@ -1211,6 +1219,29 @@ article .inputdiv input {
 
 
     /* =============== sec3 ================ */
+
+     .s3-ls-fright {
+        width: 220px;
+        height: 140px;
+    }
+    
+    .s3-ls-fright img {
+        width: 100%;
+        height: 100%;
+        /* padding: 0 25px; */
+    }
+    
+    
+
+    .s3-mt-right {
+        width: 220px;
+        height: 140px;
+    }
+
+    .s3-mt-right img{
+        width: 100%;
+        height: 100%;
+    }
    /* ================ sec4 ================ */
 
   
