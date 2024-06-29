@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finding Next Number</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.2-dist/css/bootstrap.css">
+</head>
+
+<body>
+    <!-- <button class="btn btn-primary">click me</button> -->
+
+    <div class="container">
+        <div class="row justify-content-center my-5">
+            <div class="col-8">
+                <input type="text" placeholder="Enter a Number or Array :" class="form-control input">
+                <h5 class="heading py-2"></h5>
+            </div>
+            <div class="col-2">
+                <button class="btn btn-outline-secondary">Find Next</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        let inp = document.querySelector('.input');
+        let Btn = document.querySelector('.btn');
+
+
+        function findNext() {
+            let singleNum = parseFloat(inp.value) + 1;
+            // console.log('welcome to javascript');
+            document.querySelector('.heading').innerHTML = `The Next Number of ${inp.value} is ${singleNum}`;
+            let arr;
+            arr = inp.value;
+            // if (arr.includes([])) {
+            //     let next = arr[(arr.length - 1) + 1]
+            //     console.log(next);
+            // }
+            // let myArray = arr.split(",");
+            // console.log(myArray);
+
+
+            if (arr.includes(",")) {
+                let next = arr[parseFloat(arr.length - 1)];
+                next++;
+                console.log(next);
+                document.querySelector('.heading').innerHTML = `The Next Number of this array [ ${inp.value} ] is ${next}`;
+            }
+
+
+            // if (arr.includes(",")) {
+            //     let next = arr[parseFloat(arr.length - 1)];
+            //     console.log(next);
+            //     if (!Number.isInteger(next)) {
+            //         console.log(parseFloat(next) + 1)
+            //     } else {
+            //         next++;
+            //         console.log(next);
+            //     }
+
+
+            // }
+
+
+        }
+
+        Btn.addEventListener('click', findNext)
+    </script>
+</body>
+
+</html>

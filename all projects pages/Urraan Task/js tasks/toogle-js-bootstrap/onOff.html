@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap-grid.css">
+
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        div {
+            width: 130px;
+            /* background-color: aqua; */
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        button {
+            padding: 10px;
+            border: 1px solid gray;
+            width: 130px;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        button img {
+            width: 30px;
+            height: 30px;
+        }
+
+        button .img1.hide {
+            display: none;
+        }
+
+        button .img2 {
+            display: none;
+        }
+
+        button .img2.active {
+            display: block;
+            margin-left: 80px;
+            transition: .9s;
+            animation: buttonClick 0.6s ease;
+        }
+
+
+
+@keyframes buttonClick {
+    0% { transform: scale(1); }
+    50% { transform: scale(0.9); }
+    100% { transform: scale(1); }
+}
+
+
+      
+
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <button class="btn1">
+            <img src="get_emoji_symbol_faces-150x150.png" alt="" class="img1">
+            <img src="download-removebg-preview.png" alt="" class="img2">
+        </button>
+        <p>OFF</p>
+    </div>
+
+    <div>
+        <button class="btn2">
+            <img src="get_emoji_symbol_faces-150x150.png" alt="" class="img1">
+            <img src="download-removebg-preview.png" alt="" class="img2">
+        </button>
+        <p>OFF</p>
+    </div>
+
+    <div>
+        <button class="btn3">
+            <img src="get_emoji_symbol_faces-150x150.png" alt="" class="img1">
+            <img src="download-removebg-preview.png" alt="" class="img2">
+        </button>
+        <p>OFF</p>
+    </div>
+
+    <script>
+        let divs = document.querySelectorAll('div');
+
+        divs.forEach(div => {
+            let button = div.querySelector('button');
+            let para = div.querySelector('p');
+
+            button.addEventListener('click', function () {
+                let img1 = this.querySelector('.img1');
+                let img2 = this.querySelector('.img2');
+
+                img2.classList.toggle("active");
+                img1.classList.toggle('hide');
+
+                if (img2.classList.contains("active")) {
+                    this.style.backgroundColor = "blue";
+                    para.textContent = "ON";
+                } else {
+                    this.style.backgroundColor = "#F0F0F0";
+                    para.textContent = "OFF";
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

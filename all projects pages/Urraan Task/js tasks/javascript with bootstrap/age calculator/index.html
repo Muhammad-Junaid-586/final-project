@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row text-center py-5">
+            <div class="col-6 mx-auto">
+                <h1>AGE Calculator</h1>
+
+                <div class="row">
+                    <div class="col-md-4 mx-auto">
+                        <label for="birth-day">Date Of Birth: </label>
+                    </div>
+                    <div class="col-md-8">
+                        <!-- <input type="date" name="birth-day" id="birth-day" class="form-control date-input" required> -->
+                        <input type="date" name="birth-day" id="inp" class="form-control date-input">
+
+                    </div>
+
+                    <div class="col-md-4 mx-auto py-3">
+                        <button class="btn btn-lg btn-outline-warning clcbtn" onclick="showData()">Calculate</button>
+
+                    </div>
+
+
+                    <div class="card">
+                        <div class="card-header">
+                            Result
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title para"></h5>
+                            <h5 class="card-title minute"></h5>
+                            <h5 class="card-title hours"></h5>
+                            <h5 class="card-title second"></h5>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap-grid.css">
+
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        button {
+
+            padding: 10px;
+            border: 1px solid gray;
+            width: 130px;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .btn2 {
+            background-color: blue;
+        }
+
+        button img {
+            /* padding: 5px; */
+            width: 30px;
+            height: 30px;
+        }
+
+        button .img3 {
+            display: none;
+        }
+
+        button .img3.active {
+            display: block;
+        }
+
+
+        button .img4 {
+            margin-left: 80px;
+
+
+        }
+
+        button .img4.hide {
+            display: none;
+        }
+
+        /* button .img3.hide,
+        button .img5.hide,
+        button .img1.hide {
+            display: none;
+        } */
+
+        /* .btn1 .img2,
+        .btn2 .img4,
+        .btn3 .img6 {
+            display: none;
+        } */
+
+        /* .btn1 .img2.active,
+        .btn2 .img4.active,
+        .btn3 .img6.active {
+            display: block;
+            margin-left: 80px;
+
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- <div>
+        <button class="btn1">
+            <img src="get_emoji_symbol_faces-150x150.png" alt="" class="img1">
+            <img src="download-removebg-preview.png" alt="" class="img2">
+
+        </button>
+
+        <p class="para1">OFF</p>
+    </div> -->
+
+    <div>
+        <button class="btn2">
+            <img src="get_emoji_symbol_faces-150x150.png" alt="" class="img3">
+            <img src="download-removebg-preview.png" alt="" class="img4 active">
+
+        </button>
+        <p class="para2">ON</p>
+    </div>
+    <!-- 
+    <div>
+        <button class="btn3">
+            <img src="get_emoji_symbol_faces-150x150.png" alt="" class="img5">
+            <img src="download-removebg-preview.png" alt="" class="img6">
+
+        </button>
+        <p class="para3">OFF</p>
+    </div> -->
+
+
+    <script>
+        let img1 = document.querySelector('.img1');
+        let img2 = document.querySelector('.img2');
+        let img3 = document.querySelector('.img3');
+        let img4 = document.querySelector('.img4');
+        let img5 = document.querySelector('.img5');
+        let img6 = document.querySelector('.img6');
+        // let btns = document.querySelectorAll('button');
+        let btn1 = document.querySelector('.btn1');
+        let btn2 = document.querySelector('.btn2');
+        let btn3 = document.querySelector('.btn3');
+
+        let para1 = document.querySelector('.para1');
+        let para2 = document.querySelector('.para2');
+        let para3 = document.querySelector('.para3');
+
+
+
+
+
+
+        // btn.map((e) => {
+        //     e.addEventListener('click', function () {
+
+        //         img2.classList.toggle("active")
+        //         img1.classList.toggle('hide')
+
+        //         if (img2.classList.contains("active")) {
+        //             bt.style.backgroundColor = "blue";
+        //         } else {
+        //             btn.style.backgroundColor = "#F0F0F0";
+        //         }
+        //     })
+
+        // btn1.addEventListener('click', function () {
+
+        //     img2.classList.toggle("active")
+        //     img1.classList.toggle('hide')
+
+        //     if (img2.classList.contains("active")) {
+        //         btn1.style.backgroundColor = "blue";
+        //         para1.innerHTML = "ON";
+        //     } else {
+        //         btn1.style.backgroundColor = "#F0F0F0";
+        //         para1.innerHTML = "OFF";
+        //     }
+
+
+        // })
+
+
+        btn2.addEventListener('click', function () {
+
+            img4.classList.toggle('hide');
+            img3.classList.toggle('active');
+
+
+
+            if (!img4.classList.contains("hide")) {
+                btn2.style.backgroundColor = "blue";
+                para2.innerHTML = "ON";
+            } else {
+                btn2.style.backgroundColor = "#F0F0F0 ";
+                para2.innerHTML = "OFF";
+            }
+        })
+
+        // btn3.addEventListener('click', function () {
+
+        //     img6.classList.toggle("active")
+        //     img5.classList.toggle('hide')
+
+        //     if (img6.classList.contains("active")) {
+        //         btn3.style.backgroundColor = "blue";
+        //         para3.innerHTML = "ON";
+        //     } else {
+        //         btn3.style.backgroundColor = "#F0F0F0";
+        //         para3.innerHTML = "OFF";
+        //     }
+        // })
+
+
+    </script>
+</body>
+
+</html>

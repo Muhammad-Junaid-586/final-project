@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Generation</title>
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row my-5">
+            <div class="col-6 mx-auto">
+                <input type="number" placeholder="Enter a number you want:" class="form-control input">
+                <p class="my-2 para"></p>
+            </div>
+
+            <div class="col-6 mx-auto">
+                <button class="btn btn-primary">Show Number</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let inp = document.querySelector('.input');
+            let Btn = document.querySelector('.btn');
+            let para = document.querySelector('.para');
+
+            function getData(num) {
+                let arr = [];
+                for (let i = 0; i < num; i++) {
+                    arr.push(Math.floor(Math.random() * 100));
+                }
+                return arr;
+            }
+
+            function generateFirstLast(arr) {
+                if (arr.length === 0) return [null, null];
+                let first = arr[0];
+                let last = arr[arr.length - 1];
+                return [first, last];
+            }
+
+            Btn.addEventListener('click', () => {
+                let num = parseInt(inp.value);
+                if (isNaN(num) || num <= 0) {
+                    para.textContent = 'Please enter a valid positive number.';
+                    return;
+                }
+                let myArray = getData(num);
+                let [first, last] = generateFirstLast(myArray);
+
+                console.log(first, last);
+                console.log(myArray);
+
+                para.textContent = `Generated array: ${myArray.join(', ')}\nFirst number: ${first}\nLast number: ${last}`;
+            });
+        });
+    </script>
+</body>
+
+</html>

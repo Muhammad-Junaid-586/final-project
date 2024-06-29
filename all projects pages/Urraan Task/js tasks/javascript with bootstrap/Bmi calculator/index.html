@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bmi</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.2-dist/css/bootstrap.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 py-5 mx-auto text-center">
+
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-3">
+                        <label for="weight" class="form-label">Weight :</label>
+                    </div>
+                    <div class="col-8">
+                        <input type="number" id="weight" class="form-control my-2 input1">
+                    </div>
+                </div>
+
+
+
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-3">
+                        <label for="height" class="form-label">Height :</label>
+                    </div>
+                    <div class="col-8">
+                        <input type="number" id="height" class="form-control my-2  input2">
+                    </div>
+                </div>
+
+                <button class="btn btn-lg btn-outline-secondary">Calculate</button>
+
+                <p class="para"></p>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        let input1 = document.querySelector('.input1');
+        let input2 = document.querySelector('.input2');
+        let btn = document.querySelector("button");
+        let para = document.querySelector('.para');
+
+        btn.addEventListener("click", showData)
+
+
+        function showData() {
+            let first = parseFloat(input1.value);
+            let second = parseFloat(input2.value);
+            console.log(first, second);
+
+            let meter = second * 0.3048 / 1;
+            let result = first / meter ** 2;
+            console.log(result.toFixed(2));
+            para.innerHTML = `BMI = ${result.toFixed(2)} Kg/m²`
+        }
+
+    </script>
+</body>
+
+</html>

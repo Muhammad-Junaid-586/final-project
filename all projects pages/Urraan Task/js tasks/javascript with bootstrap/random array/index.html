@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Array</title>
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css">
+</head>
+
+<body>
+    <div class="container ">
+        <div class="row  my-5">
+            <div class="col-6 mx-auto ">
+                <input type="text" placeholder="Enter a number you want :" class="form-control input">
+                <p class="my-2 para1"></p>
+                <p class="my-2 para"></p>
+
+            </div>
+
+
+            <div class="col-6 mx-auto ">
+                <button class="btn btn-primary ">Show Number</button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- <script src="script.js"></script> -->
+
+    <script>
+        let inp = document.querySelector('.input');
+        let Btn = document.querySelector('.btn');
+        let para = document.querySelector('.para');
+        let para1 = document.querySelector('.para1');
+        // var num = parseInt(inp.value);
+        // Btn.addEventListener('click', getData(inp.value));
+
+
+
+        function getData(num) {
+            let arr = [];
+
+            for (let i = 0; i < num; i++) {
+
+                arr.push(Math.floor(Math.random() * 100));
+            }
+
+            return arr;
+        }
+
+
+        function generateFirstLast(arr) {
+            let first = arr[0];
+            let second = arr[arr.length - 1];
+            return [first, second];
+        }
+
+        Btn.addEventListener('click', () => {
+            // let num = parseInt(inp.value);
+            var num = parseInt(inp.value);
+            let myArray = getData(num);
+            let [first, last] = generateFirstLast(myArray);
+
+            console.log(first, last);
+            para1.innerHTML = `The Random array of Length ${num} is [${myArray}] `
+            para.innerHTML = `The FirstNumber is ${first} & LastNumber is ${last} `
+            console.log(myArray);
+
+            // para.innerHTML = myArray;
+        })
+
+    </script>
+</body>
+
+</html>
