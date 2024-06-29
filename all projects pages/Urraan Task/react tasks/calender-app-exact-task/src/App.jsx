@@ -14,9 +14,9 @@ function App() {
   const [selectDate, setSelectDate] = useState(currentDate);
 
   return (
-    <div className="flex w--full justify-center gap-3 divide-x-2 h-screen items-center">
-      <div className="w-96 h-96">
-        <div className="flex justify-between">
+    <div className="flex flex-col md:flex-row  w--full justify-center gap-3 divide-x-2  items-center">
+      <div className="w-96 ">
+        <div className="flex justify-between ">
           <h1 className="font-extrabold">{months[today.month()]}</h1>
           <h1 className=" font-extrabold">{today.year()}</h1>
           {/* <div className="flex items-center gap-5">
@@ -107,7 +107,7 @@ function App() {
           </button>
         </div>
       </div>
-      <div className="h-96 w-72 px-5">
+      <div className=" w-72 px-5 p-3 md:p-0">
         <h1 className="font-semibold">
           Schedule for {selectDate.toDate().toDateString()}
         </h1>
