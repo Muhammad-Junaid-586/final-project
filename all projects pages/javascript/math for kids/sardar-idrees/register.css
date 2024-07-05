@@ -1,0 +1,52 @@
+body {
+  background-color: #db118e;
+  /* height: 100vh; */
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.form-control {
+  background-color: yellow !important;
+  padding: 15px;
+  border: 0 !important;
+  border-radius: 25px;
+}
+input[type="file"] {
+  padding-left: 25px;
+}
+
+.form-label {
+  color: blue;
+  font-size: 23px;
+  font-weight: 900;
+}
+h1 {
+  font-size: 3rem;
+  color: green;
+  font-weight: bolder;
+}
+h1 a {
+  text-decoration: none;
+}
+.submit {
+  border-radius: 50% !important;
+}
+
+@media (max-width: 992px) {
+  img {
+    height: 400px;
+  }
+}
+
+@media (max-width: 472px) {
+  img {
+    height: auto !important;
+  }
+}

@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #db118e;
+}
+h1 {
+  font-size: 3rem;
+  color: green;
+  font-weight: bolder;
+}
+
+h1 a {
+  text-decoration: none;
+}
+
+img {
+  border-radius: 15px;
+  height: 500px !important;
+}
+
+.logInFormDiv {
+  padding: 40px;
+  background-color: white;
+  border-radius: 20px;
+}
+.submit {
+  border-radius: 50% !important;
+}
+
+.form-control {
+  background-color: yellow !important;
+  padding: 15px;
+  border: 0 !important;
+  border-radius: 25px;
+}
+
+.form-label {
+  color: blue;
+  font-size: 23px;
+  font-weight: 900;
+}
+
+@media (max-width: 992px) {
+  img {
+    height: 400px;
+  }
+}
+
+@media (max-width: 472px) {
+  img {
+    height: auto !important;
+  }
+}
